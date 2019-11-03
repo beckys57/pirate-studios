@@ -45,12 +45,12 @@ Make a request with curl or in the browser.
 
 Get booking list for all studios with optional page parameter:
 ```
-curl -X GET http://127.0.0.1:8000/booking/list/?page=3
+curl -X GET http://127.0.0.1:8000/bookings/?page=3
 ```
 
 Get percentage of time booked for studio ID 20:
 ```
-curl -X GET http://127.0.0.1:8000/booking/20/percent/
+curl -X GET http://127.0.0.1:8000/bookings/20/percent/
 ```
 
 ## Running the tests
