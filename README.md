@@ -16,6 +16,7 @@ Clone this repository:
 
 ```
 git clone git@github.com:beckys57/pirate-studios.git
+cd pirate-studios
 ```
 
 Install Python 3.7: [Instructions](https://realpython.com/installing-python/)
@@ -28,19 +29,19 @@ Install dependencies:
 pip3 install -r requirements.txt
 ```
 
-Run migrations:
-
-```
-python manage.py migrate
-```
-
-Load the initial data
+Load the initial data:
 
 ```
 python3 manage.py  import_booking_data -f ./initial_data.json
 ```
 
-Make a request with curl or in the browser
+Run the server on port 8000:
+
+```
+python3 manage.py runserver 8000
+```
+
+Make a request with curl or in the browser.
 
 Get booking list for all studios with optional page parameter:
 ```
