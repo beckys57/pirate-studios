@@ -21,5 +21,5 @@ from booking import urls as booking_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('booking/', include(booking_urls)),
+    path('bookings/', include(booking_urls)),
 ]
